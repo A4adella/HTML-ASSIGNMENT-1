@@ -1,0 +1,87 @@
+/* CSS RESET */
+body,  h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+header {
+  background: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+ol li{
+  list-style-type: decimal;
+  color: black;
+}
+header h1 {
+  font-size: 2.5em;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+header nav a:hover {
+  background: #575757;
+}
+section{
+  margin-bottom: 16px;
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #333;
+  color: #fff;
+  margin-top: 20px;
+}
+
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+  
